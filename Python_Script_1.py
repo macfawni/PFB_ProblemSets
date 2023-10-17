@@ -1,3 +1,7 @@
 #!/usr/bin/env python3
-print("my name: Ian Philip MacFawn")
+import sys
+print("my name:Ian Philip MacFawn")
 print("my favorite color: Green")
+print("my favorite activity: Coding")
+print("my favorite animal: Dog")
+
