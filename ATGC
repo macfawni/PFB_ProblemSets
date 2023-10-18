@@ -1,0 +1,6 @@
+#!/usr/bin/env python
+dna = 'ATTGGGCCCC'
+dna.count('T')
+dna.count('C')
+dna.count('A')
+dna.count('G')
