@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+
+class DNARecord(object):
+
+	#define class attributes3
+	def __init__(self, sequence, gene_name, species_name):
+		self.sequence = sequence
+		self.gene_name = gene_name
+		self.species_name = species_name
+
+	def len(self):
+		length = len(self.sequence)
+		return length
+
+#writing the input for the class
+dna_record_1 = DNARecord('ATTGGATAC', 'GRHL2', 'D.melano')
+dna_record_2 = DNARecord('GGCCAGCCA', 'GRHL3', 'B.taurus')
+
+for objec in [ dna_record_1, dna_record_2 ]:
+	print('name:', objec.gene_name , ' ' , 'seq:' , objec.sequence)
+	print(objec.len())
+
