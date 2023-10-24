@@ -1,0 +1,8 @@
+GenomeAssembly/ecoli-pacbio-60/ecoli-60.seqStore/blobs.0003
+GenomeAssembly/ecoli-pacbio-60/unitigging/ecoli-60.ctgStore/partition.0001
+GenomeAssembly/ecoli-pacbio/ecoli.seqStore/blobs.0003
+GenomeAssembly/ecoli-pacbio/unitigging/ecoli.ctgStore/partition.0001
+GenomeAssembly/pacbio.fastq
+NGS//gatk-4.3.0.0.zip
+NGS//gatk-4.3.0.0/gatk-package-4.3.0.0-local.jar
+NGS//gatk-4.3.0.0/gatk-package-4.3.0.0-spark.jar
