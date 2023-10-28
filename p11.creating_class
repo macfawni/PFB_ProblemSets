@@ -12,6 +12,30 @@ class DNARecord(object):
 		length = len(self.sequence)
 		return length
 
+	def nuc_comp(self):
+		total_bp = len(self.sequence)
+		T = self.sequence.count('T')
+		G = self.sequence.count('G')
+		A = self.sequence.count('A')
+		C = self.sequence.count('C')
+		pT = (T / total_bp *100)
+		pG = (G / total_bp *100)
+		pA = (A / total_bp *100)
+		pC = (C / total_bp *100)
+		return f'pT: {pT}, pG: {pG}, pA: {pA}, pC: {pC}'
+		
+	def GC_content(self):
+		total_bp = len(self.sequence)
+		G = self.sequence.count('G')
+		C = self.sequence.count('C')
+		pG = (G / total_bp *100)
+		pC = (C / total_bp *100)
+		GC_content = (pG + pC)
+		return GC_content
+
+	def MakeFASTA(self):
+		FASTA = f'>{gene_name}' '{species_name} {sequence}'
+
 #writing the input for the class
 dna_record_1 = DNARecord('ATTGGATAC', 'GRHL2', 'D.melano')
 dna_record_2 = DNARecord('GGCCAGCCA', 'GRHL3', 'B.taurus')
@@ -19,4 +43,6 @@ dna_record_2 = DNARecord('GGCCAGCCA', 'GRHL3', 'B.taurus')
 for objec in [ dna_record_1, dna_record_2 ]:
 	print('name:', objec.gene_name , ' ' , 'seq:' , objec.sequence)
 	print(objec.len())
+	print(objec.nuc_comp())
+	print(f'GC content {objec.GC_content()}')
 

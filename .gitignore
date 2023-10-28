@@ -6,3 +6,6 @@ GenomeAssembly/pacbio.fastq
 NGS//gatk-4.3.0.0.zip
 NGS//gatk-4.3.0.0/gatk-package-4.3.0.0-local.jar
 NGS//gatk-4.3.0.0/gatk-package-4.3.0.0-spark.jar
+NGS/gatk-4.3.0.0.zip
+NGS/gatk-4.3.0.0/gatk-package-4.3.0.0-local.jar
+NGS/gatk-4.3.0.0/gatk-package-4.3.0.0-spark.jar

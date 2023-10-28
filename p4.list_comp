@@ -1,0 +1,6 @@
+#!/usr/bin/env python3i
+
+for num in range(100)
+print(num)
+
+
